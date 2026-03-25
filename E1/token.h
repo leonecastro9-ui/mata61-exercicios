@@ -9,5 +9,3 @@ typedef enum {
         DIV,         // 5
         ERROR,       // 6 - Erro léxico
 } token_t;
-
-
