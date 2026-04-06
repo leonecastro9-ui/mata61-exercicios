@@ -1,11 +1,7 @@
-/* recognize tokens for the calculator */
-
 %option noyywrap
 %{
 #include "token.h"
-
 %}
-
 
 %%
 
@@ -15,7 +11,7 @@
 "*"                 { return TIMES; }
 "/"                 { return DIV; }
 \n                  { return EOL; }
-[ \t]+              { /* ignora espacos em branco */ }
+[ \t]+              { /* ignora espaços e tabs */ }
 .                   { return ERROR; }
 
 %%
